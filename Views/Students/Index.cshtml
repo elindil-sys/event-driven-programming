@@ -1,0 +1,26 @@
+@model IEnumerable<Student>
+@{
+    ViewData["Title"] = "Students";
+}
+<h2>Student List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Reg Number</th>
+            <th>Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.RegNumber</td>
+            <td>@s.FullName</td>
+            <td><a href="/Students/Details/@s.Id">Details</a></td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Students MVC Demo</title>
+    <style>
+        body { font-family: Segoe UI, Arial, sans-serif; margin: 2rem; }
+        table { border-collapse: collapse; width: 100%; max-width: 640px; }
+        th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+        th { background: #f0f0f0; }
+        a { color: #0b5ed7; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Students MVC Demo</h1>
+        <p><a href="/Students">All Students</a></p>
+        <hr />
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+</body>
+</html>

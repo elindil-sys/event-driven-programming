@@ -1,0 +1,16 @@
+@model Student
+@{
+    ViewData["Title"] = "Student Details";
+}
+<h2>Student Details</h2>
+<dl>
+    <dt>Id</dt>
+    <dd>@Model.Id</dd>
+    <dt>Registration Number</dt>
+    <dd>@Model.RegNumber</dd>
+    <dt>Full Name</dt>
+    <dd>@Model.FullName</dd>
+    <dt>Programme</dt>
+    <dd>@Model.Programme</dd>
+</dl>
+<p><a href="/Students">Back to list</a></p>
